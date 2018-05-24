@@ -19,6 +19,8 @@ DATABASEPW= your password database name
 ```
 
 ### REST API SERVER
+link rest api
+http://apilivecodedua.thismylife.net/
 
 ### Link API
 
@@ -34,3 +36,5 @@ DATABASEPW= your password database name
 
 ### Account
 
+link client
+http://livecodebook.thismylife.net
