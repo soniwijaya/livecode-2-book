@@ -103,7 +103,7 @@ export default {
         showlistBook: function () {
             let id = localStorage.getItem('id')
             let self = this
-            axios.get(`http://localhost:3000/books/view/book`,
+            axios.get(`http://apilivecodedua.thismylife.net/books/view/book`,
                 {
                     headers: {
                         id
@@ -128,7 +128,7 @@ export default {
             formData.append('image', this.addbuku.image)
             formData.append('content', this.addbuku.content)
             let self = this
-            axios.post('http://localhost:3000/books', formData, {
+            axios.post('http://apilivecodedua.thismylife.net/books', formData, {
                 headers: {
                     apptoken,
                     id
@@ -168,7 +168,7 @@ export default {
             })
             .then((willDelete) => {
                 if (willDelete) {
-                axios.delete(`http://localhost:3000/books/${idBooks}`,
+                axios.delete(`http://apilivecodedua.thismylife.net/books/${idBooks}`,
                     {
                         headers: {
                             apptoken,

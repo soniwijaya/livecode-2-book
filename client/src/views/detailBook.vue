@@ -67,7 +67,7 @@ export default {
     methods : {
         showDetail: function () {
             let self = this
-            axios.get(`http://localhost:3000/books/${this.idBook}`)
+            axios.get(`http://apilivecodedua.thismylife.net/books/${this.idBook}`)
             .then(response => {
                 self.listDetail = response.data.data
             })

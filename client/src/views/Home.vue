@@ -78,7 +78,7 @@ export default {
   methods: {
     showBook: function () {
       let self = this
-      axios.get(`http://localhost:3000/books`)
+      axios.get(`http://apilivecodedua.thismylife.net/books`)
       .then(function(response) {
          self.listbook = response.data.data
       })
@@ -88,7 +88,7 @@ export default {
     },
     loginButton: function () {
         let self = this
-        axios.post('http://localhost:3000/users/login', {
+        axios.post('http://apilivecodedua.thismylife.net/users/login', {
             email: this.login.email,
             password: this.login.password
         })
@@ -107,7 +107,7 @@ export default {
         })
     },
     registerButton: function () {
-        axios.post('http://localhost:3000/users/', {
+        axios.post('http://apilivecodedua.thismylife.net/users/', {
             fullname: this.register.fullname,
             email: this.register.email,
             password: this.register.password
